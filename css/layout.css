@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/* 
+    File Name  : layout.css   
+    Description: 各ブロックのレイアウト 
+*/
+/* BASE */
+
+body {
+  line-height: 1.8;
+  color: #000;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
+    Meiryo, Osaka, "MS Pゴシック", "MS PGothic", "sans-serif";
+  font-size: 14px;
+  padding-top: 120px;
+}
+body.is-open {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+}
+@media screen and (max-width: 811px) {
+  body {
+    padding-top: 50px;
+  }
+}
+
+/* hypertext */
+a {
+  color: #000;
+  text-decoration: none;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+a img {
+  border: none;
+}
+a.over:hover,
+a:hover img.over,
+input.over:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
