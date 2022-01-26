@@ -226,3 +226,121 @@ img {
   color: #392d2b;
   font-weight: bold;
 }
+
+.global-nav-list__item > a:hover {
+  text-decoration: none;
+}
+
+.global-nav-list__item > a span {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.global-nav-list__item > a span:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #382d2b;
+  transition: all 0.2s ease;
+}
+
+.global-nav-list__item > a:hover span:after {
+  width: 100%;
+}
+.global-nav-list-sub-wrap {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background: rgba(97, 77, 74, 0.9);
+  z-index: 10;
+}
+.global-nav-list-sub-wrap.img-none span {
+  padding: 20px 0;
+  text-align: center;
+  margin: 0 !important;
+  display: block;
+  width: 100%;
+}
+
+.global-nav-list-sub {
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+  border-left: 1px solid #392d2b;
+  box-sizing: border-box;
+}
+.global-nav-list-sub__item {
+  width: 50%;
+  border-right: 1px solid #392d2b;
+  box-sizing: border-box;
+}
+
+.global-nav-list-sub__item {
+  width: 50%;
+  border-right: 1px solid #392d2b;
+  box-sizing: border-box;
+}
+
+.global-nav-list-sub__item a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.global-nav-list-sub__item a:hover {
+  text-decoration: none;
+}
+
+.global-nav-list-sub__item a span {
+  display: block;
+  overflow: hidden;
+}
+
+.global-nav-list-sub__item a span:first-child {
+  margin: 0 35px 0 0;
+}
+
+.global-nav-list-sub__item a img {
+  min-width: 168px;
+  transition: all 0.2s ease-in-out;
+}
+
+.global-nav-list-sub__item a:hover img {
+  transform: scale(1.1);
+}
+
+/* グローバルナビoverlay 未対応 （363-422まで）*/
+
+@media screen and (min-width: 812px) {
+  /* header.is-scroll */
+  .global-nav-list-sub-wrap,
+  .header__logo-wrap,
+  .header-guide-list__item,
+  .global-nav-list__item > a {
+    transition: 0.3s ease-in-out;
+  }
+
+  .header.is-scroll .header__logo-wrap,
+  .header.is-scroll .header-guide-list__item:not(.header-guide-list__item--nav),
+  .header.header.is-scroll .global-nav-list__item > a {
+    height: 50px;
+  }
+  .header.is-scroll .global-nav-list-sub-wrap {
+    top: 50px;
+  }
+  .header.is-scroll .header-guide-list__item--nav {
+    margin: 15px 30px;
+  }
+}
+/* 449から */
