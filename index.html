@@ -8,27 +8,28 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/reset.css" />
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   </head>
   <body>
     <!-- start header -->
     <header class="header">
       <div class="header_logo-wrap">
         <div class="header_logo">
-          <a href=""
-            ><img
-              src="https://www.andersen.co.jp/"
-              alt="パンからはじまる、ヒュッゲな暮らし。ベーカリー「アンデルセン」"
-          /></a>
+          <a href="https://www.andersen.co.jp/">
+            <img
+              src="img/logo-01.png"
+              alt="パンからはじまる、ヒュッゲな暮らし。ベーカリー「アンデルセン」"/>
+          </a>
         </div>
-        <div class="header-guide">
+      </div>      
+      <div class="header-guide">
           <ul class="header-guide-list">
             <li class="header-guide-list__item header-guide-list__item--sns">
-              <a
-                href="https://www.facebook.com/andersen.jp/"
+              <a href="https://www.facebook.com/andersen.jp/"
                 class="over"
                 target="_blank"
               >
-                <span><img src="" alt="フェイスブック" /></span>
+                <span><i class="fab fa-facebook-f fa-lg" style="color: white;"></i></span>
               </a>
             </li>
             <li class="header-guide-list__item header-guide-list__item--sns">
@@ -37,7 +38,7 @@
                 class="over"
                 target="_blank"
               >
-                <span><img src="" alt="インスタグラム" /></span>
+                <span><i class="fab fa-instagram fa-lg"style=" color: white;"></i></span>
               </a>
             </li>
             <li class="header-guide-list__item header-guide-list__item--nav">
@@ -46,14 +47,13 @@
               <span></span>
             </li>
             <li
-              class="header-guide-list__item header-guide-list__item--recruit"
-            >
+              class="header-guide-list__item header-guide-list__item--recruit">
               <a
                 href="https://www.andersen-group.jp/recruit/"
                 class="over"
                 target="_blank"
-                >RECRUIT</a
-              >
+                >RECRUIT
+              </a>
             </li>
             <li class="header-guide-list__item header-guide-list__item--ec">
               <a
@@ -65,9 +65,8 @@
               </a>
             </li>
           </ul>
-        </div>
-
-        <div class="global-nav">
+      </div>
+      <div class="global-nav">
           <ul class="global-nav-list">
             <li class="global-nav-list__item">
               <a href="/information/">
@@ -105,16 +104,19 @@
             </li>
             <li class="global-nav-list__item">
               <a href="/hygge/">
-                <span>アンデルセンの想い</span>
+                <span>アンデルセンの想い
+                  <!-- プルダウンメニュー　疑似要素が入る？ -->
+                </span>
               </a>
-              <div class="global-nav-list-sub-wrap">
+              <div class="global-nav-list-sub-wrap" style="opacity: 0; visibility: hidden;">
                 <ul class="global-nav-list-sub">
                   <li class="global-nav-list-sub__item">
                     <a href="/hygge/">
                       <span>
                         <img src="/assets/img/common/img-think-01.jpg" alt="" />
                       </span>
-                      <span>アンデルセンの想い</span>
+                      <span>アンデルセンの想い
+                      </span>
                     </a>
                   </li>
                   <li class="global-nav-list-sub__item">
@@ -142,7 +144,6 @@
               </a>
             </li>
           </ul>
-        </div>
       </div>
     </header>
     <!-- end header -->
@@ -183,13 +184,15 @@
             <div class="think-kv">
               <h1 class="ttl-01 think-kv__ttl">
                 <span lang="en">
-                  <img src="" width="294" alt="ANDERSEN Logo" />
+                  <img src="img/logo-andersen.png" width="294" alt="ANDERSEN Logo" />
                 </span>
-                <span lang="ja"> アンデルセンの想い </span>
+                <span lang="ja">
+                   アンデルセンの想い 
+                </span>
               </h1>
               <!-- メインビジュアル -->
               <div class="think-kv__img js-img-fit">
-                <img src="" alt="アンデルセンの想い画像" />
+                <img src="img/img001.jpg" alt="アンデルセンの想い画像" />
               </div>
             </div>
             <!-- イントロダクション -->
