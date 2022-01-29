@@ -86,9 +86,21 @@ ul {
 
 /*＝＝＝＝＝ リンクボタン ＝＝＝＝＝＝＝*/
 .navlist_sec {
-  position: absolute;
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 5%;
 }
-
+.floating-box {
+  width: 60px;
+  height: 150px;
+  position: fixed;
+  top: 70%;
+  right: 0px;
+  background-color: #392d2b;
+  color: #ffffff;
+  writing-mode: vertical-rl;
+}
 /* 
     File Name   : common.css
     Description : コンテンツエリア共通
@@ -125,6 +137,15 @@ ul {
 .ttl-01 span img {
   vertical-align: middle;
   margin-bottom: 0.3em;
+}
+
+/* At Home  */
+.hygge_athome {
+}
+.title_sec {
+  width: 350px;
+  height: 50px;
+  background-color: antiquewhite;
 }
 
 /* .js-img-fit  */
