@@ -101,6 +101,7 @@ ul {
   color: #ffffff;
   writing-mode: vertical-rl;
 }
+
 /* 
     File Name   : common.css
     Description : コンテンツエリア共通
@@ -139,9 +140,6 @@ ul {
   margin-bottom: 0.3em;
 }
 
-/* At Home  */
-.hygge_athome {
-}
 .title_sec {
   width: 350px;
   height: 50px;
