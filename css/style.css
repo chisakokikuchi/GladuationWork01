@@ -4,9 +4,9 @@
 .header {
   margin-bottom: 0;
 }
-.container {
+/* .container {
   margin-top: 0;
-}
+} */
 
 /* デフォルトcssより */
 
@@ -90,18 +90,25 @@ ul {
   position: fixed;
   top: 50%;
   left: 5%;
+  line-height: 1.6;
 }
 .floating-box {
   width: 60px;
-  height: 150px;
+  height: 160px;
   position: fixed;
-  top: 70%;
+  top: 65%;
   right: 0px;
   background-color: #392d2b;
   color: #ffffff;
   writing-mode: vertical-rl;
 }
-
+.rink-btn {
+  display: block;
+  padding: 16px;
+}
+.rink-btn a {
+  color: #ffffff;
+}
 /* 
     File Name   : common.css
     Description : コンテンツエリア共通
