@@ -4,13 +4,11 @@
 .header {
   margin-bottom: 0;
 }
-/* .container {
+.container {
   margin-top: 0;
-} */
-
+}
 /* デフォルトcssより */
-
-li,
+/* li,
 ol,
 ul {
   list-style: none;
@@ -18,12 +16,11 @@ ul {
   padding: 0;
   font-style: normal;
   font-weight: normal;
-}
+} */
 
 .global-nav-list__item:nth-child(5) a span:after {
   width: 100%;
 }
-
 .think-kv {
   position: relative;
   height: calc(100vh - 120px);
