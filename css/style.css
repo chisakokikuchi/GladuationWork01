@@ -19,7 +19,6 @@ ul {
   font-style: normal;
   font-weight: normal;
 }
-/* ↑デフォルトcss */
 
 .global-nav-list__item:nth-child(5) a span:after {
   width: 100%;
