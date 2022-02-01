@@ -459,11 +459,52 @@ img {
   }
 }
 /* At Home  */
-.hygge_athome {
+
+/* .hygge_athome {
+  position: relative;
+} */
+.all_sub_container {
+  padding-left: 305px;
   position: relative;
 }
+.all_title_inner {
+  font-weight: 40;
+  font-size: 20px;
+}
+.all_title_head {
+  line-height: 1;
+  font-weight: 50;
+  font-size: 26px;
+  overflow: hidden;
+}
+
 .hygge_athome_img {
   position: absolute;
+}
+/* 仮のサイズ */
+.athome_main_img {
+  width: 40.75vw;
+  right: 0;
+  top: 15 0.625vw;
+}
+.athome_img2 {
+  width: 47.75vw;
+  left: 0;
+  top: 42.5vw;
+}
+.athome_img3 {
+  width: 50vw;
+  left: 45vw;
+  top: 56vw;
+}
+.athome_img4 {
+  width: 30%;
+  height: 30%;
+}
+
+.athome_img5 {
+  width: 30%;
+  height: 30%;
 }
 
 /* footer  */
