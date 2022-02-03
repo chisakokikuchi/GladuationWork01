@@ -133,7 +133,7 @@ ul {
   font-size: 60px;
   font-weight: 500;
   font-family: "Cormorant SC", serif;
-  later-spacing: 5px;
+  /* later-spacing: 5px; */
 }
 .ttl-01 span[lang="ja"] {
   font-size: 16px;
@@ -144,8 +144,9 @@ ul {
 }
 
 .title_sec {
-  width: 350px;
-  height: 50px;
+  padding: 6px;
+  width: 200px;
+  height: 30px;
   background-color: antiquewhite;
 }
 
