@@ -468,7 +468,7 @@ img {
   position: relative;
 } */
 .all_sub_container {
-  padding-left: 300px;
+  padding-left: 250px;
   position: relative;
 }
 .all_title_inner {
@@ -482,21 +482,27 @@ img {
   overflow: hidden;
 }
 /* テキストの配置途中 */
-.athome_text {
-}
-.athome_text1 {
+.hygge_athome {
+  display: flex;
 }
 
 .athome_main_img {
   margin-top: 50px;
   margin-left: 30%;
 }
+.athome_text {
+  position: relative;
+}
+.athome_text1 {
+  width: 54vw;
+}
+
 /* .hygge_athome_img {
   margin: 100px;
   position: absolute;
 } */
 
-/* 仮のサイズ */
+/* 画像　仮のサイズ */
 .athome_main_img {
   width: 70%;
 }
