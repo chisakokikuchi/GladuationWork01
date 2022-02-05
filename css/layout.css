@@ -468,12 +468,12 @@ img {
   position: relative;
 } */
 .all_sub_container {
-  /* max-width: 960px; */
+  max-width: 960px;
   margin: 0 auto;
   position: relative;
 }
 .title_sec {
-  padding-left: 20%;
+  padding-left: 10%;
 }
 
 .all_title_inner {
@@ -501,16 +501,17 @@ img {
   line-height: 2;
   letter-spacing: 2;
 }
+/* AT HOME  */
 .athome1 {
   display: flex;
-  /* padding-left: 15%; */
 }
 .athome_text1 {
-  padding: 10%;
-  padding-left: 15%;
+  padding-left: 10%;
+  padding-top: 15%;
 }
 .athome2 {
   display: flex;
+  padding: 5%;
 }
 .athome_text2 {
   padding-top: 8%;
@@ -524,42 +525,35 @@ img {
 }
 .athome4 {
   display: flex;
+  position: absolute;
+  top: 97%;
 }
 .athome_text4 {
-  padding: 15%;
+  padding: 8%;
 }
-/* .athome_text1,
-.athome_img1 {
-  display: inline-block;
-  vertical-align: middle;
-} */
-
-/* .athome_text1 {
-  padding: 100px;
-  padding-left: 20%;
-} */
-
-/* .athome_text {
-  position: relative;
-} */
-
 /* 画像のサイズ */
 .athome_img1 {
-  width: 65%;
+  width: 70%;
   height: auto;
+  padding-left: 10%;
 }
 .athome_img2 {
   width: 50%;
   height: auto;
+  top: -10%;
 }
 .athome_img3 {
-  width: 50%;
+  width: 55%;
   height: auto;
 }
 .athome_img4 {
-  width: 45%;
+  width: 40%;
   height: auto;
+  padding-left: 10%;
 }
+
+/* CANDLE  */
+
 .candle_img1 {
   width: 50%;
   height: auto;
@@ -575,7 +569,6 @@ img {
 .candle_img4 {
   width: 40%;
 }
-
 .page-top a:before {
   content: "";
   position: absolute;
