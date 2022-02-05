@@ -468,49 +468,143 @@ img {
   position: relative;
 } */
 .all_sub_container {
-  padding-left: 250px;
+  /* max-width: 960px; */
+  margin: 0 auto;
   position: relative;
 }
+.title_sec {
+  padding-left: 20%;
+}
+
 .all_title_inner {
-  font-weight: 40;
+  font-weight: 100;
   font-size: 20px;
+  background-color: antiquewhite;
 }
 .all_title_head {
   line-height: 1;
-  font-weight: 50;
-  font-size: 26px;
+  font-weight: 100;
+  font-size: 30px;
   overflow: hidden;
 }
 /* テキストの配置途中 */
-.hygge_athome {
-  display: flex;
-}
 
-.athome_main_img {
-  margin-top: 50px;
-  margin-left: 30%;
-}
-.athome_text {
-  position: relative;
-}
-.athome_text1 {
-  width: 54vw;
-}
-
-/* .hygge_athome_img {
-  margin: 100px;
-  position: absolute;
+/* .hygge_flow_text,
+.hygge_athome_img {
+  display: inline-block;
+  vertical-align: middle;
 } */
 
-/* 画像　仮のサイズ */
-.athome_main_img {
-  width: 70%;
+.hygge_flow_text {
+  font-size: 18px;
+  white-space: nowrap;
+  line-height: 2;
+  letter-spacing: 2;
+}
+.athome1 {
+  display: flex;
+  /* padding-left: 15%; */
+}
+.athome_text1 {
+  padding: 10%;
+  padding-left: 15%;
+}
+.athome2 {
+  display: flex;
+}
+.athome_text2 {
+  padding-top: 8%;
+  padding-left: 10%;
+}
+.athome3 {
+  display: flex;
+}
+.athome_text3 {
+  padding: 10%;
+}
+.athome4 {
+  display: flex;
+}
+.athome_text4 {
+  padding: 15%;
+}
+/* .athome_text1,
+.athome_img1 {
+  display: inline-block;
+  vertical-align: middle;
+} */
+
+/* .athome_text1 {
+  padding: 100px;
+  padding-left: 20%;
+} */
+
+/* .athome_text {
+  position: relative;
+} */
+
+/* 画像のサイズ */
+.athome_img1 {
+  width: 65%;
+  height: auto;
+}
+.athome_img2 {
+  width: 50%;
+  height: auto;
+}
+.athome_img3 {
+  width: 50%;
+  height: auto;
+}
+.athome_img4 {
+  width: 45%;
+  height: auto;
+}
+.candle_img1 {
+  width: 50%;
+  height: auto;
+}
+.candle_img2 {
+  width: 60%;
+  height: auto;
+}
+.candle_img3 {
+  width: 55%;
+  height: auto;
+}
+.candle_img4 {
+  width: 40%;
+}
+
+.page-top a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 0 0 5px;
+  border-color: transparent transparent transparent #000;
+}
+.page-top a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid #000;
+}
+/* 画像仮のサイズ */
+/* .athome_main_img {
+  margin-top: 50px;
+  margin-left: 250px;
 }
 .athome_img2 {
   position: absolute;
   width: 60vw;
   left: 0;
-  top: 50vw;
+  top: 70vh;
 }
 .athome_img3 {
   position: absolute;
@@ -522,7 +616,7 @@ img {
   margin-top: 60%;
   width: 40vw;
   left: 15%;
-}
+} */
 
 /* footer  */
 .footer-bottom {
