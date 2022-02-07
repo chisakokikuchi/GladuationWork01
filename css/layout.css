@@ -475,7 +475,6 @@ img {
 .title_sec {
   padding-left: 10%;
 }
-
 .all_title_inner {
   font-weight: 100;
   font-size: 20px;
@@ -502,43 +501,43 @@ img {
   letter-spacing: 2;
 }
 /* AT HOME  */
-.athome1 {
+.athome1,
+.athome3 {
   display: flex;
+}
+.athome2 {
+  display: flex;
+  padding: 5%;
+  justify-content: center;
+}
+.athome4 {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
 }
 .athome_text1 {
   padding-left: 10%;
   padding-top: 15%;
 }
-.athome2 {
-  display: flex;
-  padding: 5%;
-}
 .athome_text2 {
   padding-top: 8%;
   padding-left: 10%;
 }
-.athome3 {
-  display: flex;
-}
 .athome_text3 {
   padding: 10%;
 }
-.athome4 {
-  display: flex;
-  position: absolute;
-  top: 97%;
-}
 .athome_text4 {
-  padding: 8%;
+  padding-top: 6%;
+  padding-left: 8%;
 }
 /* 画像のサイズ */
 .athome_img1 {
-  width: 70%;
+  width: 70vw;
   height: auto;
   padding-left: 10%;
 }
 .athome_img2 {
-  width: 50%;
+  width: 45vw;
   height: auto;
   top: -10%;
 }
@@ -547,28 +546,153 @@ img {
   height: auto;
 }
 .athome_img4 {
-  width: 40%;
+  width: 40vw;
   height: auto;
   padding-left: 10%;
 }
 
 /* CANDLE  */
-
+.candle1,
+.candle2,
+.candle3,
+.candle4 {
+  padding-left: 10%;
+  display: flex;
+  justify-content: center;
+}
+.candle3 {
+  padding-top: 6%;
+}
+.candle_text1 {
+  padding: 10%;
+}
+.candle_text2 {
+  padding: 7%;
+}
+.candle_text3 {
+  padding: 7%;
+}
+.candle_text4 {
+  padding: 18%;
+}
 .candle_img1 {
-  width: 50%;
-  height: auto;
+  width: 40%;
 }
-.candle_img2 {
-  width: 60%;
+/* .candle_img2 {
+  width: 30%;
   height: auto;
-}
+} */
 .candle_img3 {
   width: 55%;
   height: auto;
 }
 .candle_img4 {
-  width: 40%;
+  padding-top: 10%;
+  width: 30%;
 }
+/* FOOD  */
+.food1,
+.food2,
+.food3,
+.food4 {
+  padding-left: 10%;
+  display: flex;
+  justify-content: center;
+}
+.food_text1 {
+  padding: 6%;
+}
+.food2 {
+  padding-top: 70px;
+}
+.food_img2 {
+  width: 30%;
+  padding-left: 15%;
+  position: absolute;
+  top: 18%;
+}
+.food_text2 {
+  padding: 15%;
+}
+.food3 {
+  padding: 6%;
+}
+.food_img3 {
+  width: 35%;
+}
+.food_text3 {
+  padding: 7%;
+}
+.food_img4 {
+  width: 50%;
+  height: auto;
+  padding-left: 8%;
+}
+.food_text4 {
+  padding: 6%;
+}
+.food_img5 {
+  width: 60%;
+  height: auto;
+  padding-left: 10%;
+}
+.food_img6 {
+  padding-left: 15%;
+  width: 33%;
+  height: auto;
+  position: absolute;
+  top: 93%;
+}
+
+/* OutDoor */
+.outdoor1,
+.outdoor2,
+.outdoor3,
+.outdoor4,
+.outdoor5 {
+  padding-left: 10%;
+  display: flex;
+  justify-content: center;
+}
+.outdoor_ttl {
+  padding-top: 8%;
+}
+.outdoor1 {
+  padding: 5% 5% 0 5%;
+}
+.outdoor_text1 {
+  padding: 8%;
+}
+.outdoor_img2 {
+  width: 40%;
+  top: 50%;
+}
+.outdoor_img3 {
+  width: 53%;
+  padding: 6%;
+}
+.outdoor_text3 {
+  padding: 10%;
+}
+.outdoor_text4 {
+  padding: 7%;
+}
+.outdoor_img6 {
+  width: 35%;
+  padding-left: 25%;
+  /* position: absolute;
+  top: 78%; */
+}
+.outdoor5 {
+  padding: 5%;
+}
+.outdoor_img7 {
+  width: 50%;
+}
+.outdoor_text5 {
+  padding-left: 8%;
+}
+
 .page-top a:before {
   content: "";
   position: absolute;
