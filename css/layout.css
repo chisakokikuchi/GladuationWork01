@@ -394,7 +394,7 @@ img {
     margin: 15px 30px;
   }
 }
-@media screen and(max-width: 990px) {
+@media screen and (max-width: 990px) {
   .global-nav-list__item > a {
     padding: 0 2.8vw;
     font-size: 13px;
@@ -554,16 +554,18 @@ img {
   overflow: hidden;
   margin: 100px 0 90px;
 }
+.all_sub_follow_sec {
+  padding: 120px 0 0;
+}
 
 @media screen and (max-width: 811px) {
   .container {
     margin: 30px 0 50px;
   }
+  .all_sub_follow_sec {
+    padding: 50px;
+  }
 }
-.all_sub_follow_sec {
-  padding: 120px 0 0;
-}
-
 /* At Home  */
 
 /* .hygge_athome {
@@ -578,8 +580,8 @@ img {
   padding-left: 10%;
 }
 .all_title_inner {
-  font-weight: 200;
-  font-size: 24px;
+  font-weight: 300;
+  font-size: 34px;
   font-family: "Cormorant SC", serif;
   background-color: antiquewhite;
   padding: 2px;
@@ -587,22 +589,33 @@ img {
 .all_title_head {
   line-height: 1;
   font-weight: 100;
-  font-size: 30px;
+  font-size: 28px;
   overflow: hidden;
+  line-height: 1.5;
 }
-/* テキストの配置途中 */
-
-/* .hygge_flow_text,
-.hygge_athome_img {
-  display: inline-block;
-  vertical-align: middle;
-} */
-
 .hygge_flow_text {
   font-size: 18px;
   white-space: nowrap;
   line-height: 2;
   letter-spacing: 2;
+}
+
+@media screen and (max-width: 811px) {
+  .title_sec {
+    padding-left: 0;
+  }
+  .all_title_inner {
+    font-weight: 100;
+    font-size: 28px;
+  }
+  .all_title_head {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  .hygge_flow_text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 /* AT HOME  */
 .athome1,
@@ -653,6 +666,12 @@ img {
   width: 40vw;
   height: auto;
   padding-left: 10%;
+}
+@media screen and (max-width: 811px) {
+  .athome_text1 {
+    padding-left: 0;
+    padding-top: 10%;
+  }
 }
 
 /* CANDLE  */
@@ -799,7 +818,6 @@ img {
 
 @media screen and (max-width: 811px) {
 }
-
 .page-top a:before {
   content: "";
   position: absolute;
