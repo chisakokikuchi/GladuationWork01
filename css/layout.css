@@ -401,7 +401,7 @@ img {
   }
 }
 
-@media screen and(max-width: 811px) {
+@media screen and (max-width: 811px) {
   .header__logo {
     left: 15px;
   }
@@ -797,6 +797,9 @@ img {
   padding-left: 8%;
 }
 
+@media screen and (max-width: 811px) {
+}
+
 .page-top a:before {
   content: "";
   position: absolute;
@@ -816,28 +819,6 @@ img {
   left: 0;
   border-left: 1px solid #000;
 }
-/* 画像仮のサイズ */
-/* .athome_main_img {
-  margin-top: 50px;
-  margin-left: 250px;
-}
-.athome_img2 {
-  position: absolute;
-  width: 60vw;
-  left: 0;
-  top: 70vh;
-}
-.athome_img3 {
-  position: absolute;
-  left: 40vw;
-  top: 80vw;
-}
-.athome_img4 {
-  position: absolute;
-  margin-top: 60%;
-  width: 40vw;
-  left: 15%;
-} */
 
 /* footer  */
 .footer-bottom {
