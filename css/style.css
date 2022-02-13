@@ -20,6 +20,7 @@
   display: block;
   background-color: #ffffff;
   opacity: 0.8;
+  padding: 5px;
 }
 
 .ttl-01 span[lang="en"] {
@@ -32,7 +33,7 @@
 }
 .ttl-01 span img {
   vertical-align: middle;
-  margin-bottom: 0.3em;
+  margin-bottom: 0;
 }
 
 .think-kv {
@@ -202,24 +203,20 @@
 }
 
 .closing_sec {
-  padding: 90px;
+  padding: 20px;
 }
-
 .contents__closing__ttl {
   font-size: 24px;
   text-align: center;
   padding-bottom: 30px;
 }
-
 .contents__closing__ttl span {
   font-family: "Cormorant SC", serif;
 }
-
 .contents__closing__text {
   font-size: 16px;
   text-align: center;
 }
-
 /* アンデルセンの志バナー */
 .contents-banner {
   padding: 120px 0 30px;
@@ -241,7 +238,17 @@
   font-weight: bold;
   letter-spacing: 0.3em;
 }
-
+@media screen and (max-width: 811px) {
+  .contents-banner {
+    padding: 50px 0 20px;
+  }
+  .content-banner__ttl > span {
+    font-size: 16px;
+  }
+  .contents-banner a {
+    height: 30vw;
+  }
+}
 /* .title_sec {
   padding: 6px;
   width: 200px;

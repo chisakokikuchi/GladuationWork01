@@ -563,7 +563,7 @@ img {
     margin: 30px 0 50px;
   }
   .all_sub_follow_sec {
-    padding: 50px;
+    padding: 30px;
   }
 }
 /* At Home  */
@@ -667,13 +667,44 @@ img {
   height: auto;
   padding-left: 10%;
 }
+/* アットホームSP  */
+
 @media screen and (max-width: 811px) {
+  .athome1,
+  .athome2,
+  .athome3,
+  .athome4 {
+    display: block;
+  }
   .athome_text1 {
-    padding-left: 0;
     padding-top: 10%;
+    text-align: center;
+  }
+  .athome_text2,
+  .athome_text3 {
+    padding: 5%;
+    text-align: center;
+  }
+  .athome_text4 {
+    padding: 5%;
+  }
+  .athome_img1 {
+    width: 80%;
+    padding: 10%;
+  }
+  .athome_img2 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .athome_img3 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .athome_img4 {
+    width: 80%;
+    margin: 0 auto;
   }
 }
-
 /* CANDLE  */
 .candle1,
 .candle2,
@@ -713,6 +744,18 @@ img {
   padding-top: 10%;
   width: 30%;
 }
+/* キャンドルSP  */
+
+@media screen and (max-width: 811px) {
+  .candle1,
+  .candle2,
+  .candle3,
+  .candle4 {
+    padding-left: 0;
+    display: block;
+  }
+}
+
 /* FOOD  */
 .food1,
 .food2,
@@ -766,7 +809,16 @@ img {
   position: absolute;
   top: 93%;
 }
-
+/* フードSP */
+@media screen and (max-width: 811px) {
+  .food1,
+  .food2,
+  .food3,
+  .food4 {
+    padding-left: 0;
+    display: block;
+  }
+}
 /* OutDoor */
 .outdoor1,
 .outdoor2,
@@ -814,6 +866,17 @@ img {
 }
 .outdoor_text5 {
   padding-left: 8%;
+}
+/* アウトドアSP */
+@media screen and (max-width: 811px) {
+  .outdoor1,
+  .outdoor2,
+  .outdoor3,
+  .outdoor4,
+  .outdoor5 {
+    padding-left: 0;
+    display: block;
+  }
 }
 
 @media screen and (max-width: 811px) {
