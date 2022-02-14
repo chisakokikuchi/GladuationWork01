@@ -670,40 +670,58 @@ img {
 /* アットホームSP  */
 
 @media screen and (max-width: 811px) {
-  .athome1,
   .athome2,
-  .athome3,
   .athome4 {
     display: block;
   }
+  .athome1 {
+    flex-direction: column;
+  }
+  .athome1:nth-child(even) {
+    flex-direction: column;
+  }
+  .athome3 {
+    flex-direction: column;
+  }
+  .athome3:nth-child(even) {
+    flex-direction: column;
+  }
   .athome_text1 {
     padding-top: 10%;
-    text-align: center;
+    /* text-align: center; */
   }
   .athome_text2,
   .athome_text3 {
     padding: 5%;
-    text-align: center;
-  }
-  .athome_text4 {
-    padding: 5%;
+    /* text-align: center; */
   }
   .athome_img1 {
-    width: 80%;
+    width: 100%;
     padding: 10%;
   }
   .athome_img2 {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
   .athome_img3 {
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    padding-left: 0;
   }
   .athome_img4 {
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    padding-right: 0;
   }
+  /* 画像とテキストの並びを入れ替えたい */
+  .box {
+    flex-direction: column;
+  }
+  .order1 {
+    order: 1;
+  }
+  .order2 {
+    order: 2;
+  }
+  /* 画像とテキストの並びの入れ替えトライ（途中） */
 }
 /* CANDLE  */
 .candle1,
@@ -747,12 +765,26 @@ img {
 /* キャンドルSP  */
 
 @media screen and (max-width: 811px) {
-  .candle1,
   .candle2,
-  .candle3,
   .candle4 {
     padding-left: 0;
     display: block;
+  }
+  .candle_img1 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .candle1 {
+    flex-direction: column;
+  }
+  .candle1:nth-child(even) {
+    flex-direction: column;
+  }
+  .candle3 {
+    flex-direction: column;
+  }
+  .candle3:nth-child(even) {
+    flex-direction: column;
   }
 }
 
@@ -811,12 +843,20 @@ img {
 }
 /* フードSP */
 @media screen and (max-width: 811px) {
-  .food1,
-  .food2,
   .food3,
   .food4 {
     padding-left: 0;
     display: block;
+  }
+  .food1 {
+    flex-direction: column;
+  }
+  .food1:nth-child(even) {
+    flex-direction: column;
+  }
+  .food_img2 {
+    width: 70%;
+    top: 35%;
   }
 }
 /* OutDoor */

@@ -165,7 +165,7 @@
 @media screen and (max-width: 811px) {
   .floating-box {
     opacity: 0.7;
-    top: 65%;
+    top: 60%;
     font-size: 12px;
     width: 50px;
     height: 140px;
