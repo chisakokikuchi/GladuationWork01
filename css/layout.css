@@ -786,6 +786,12 @@ img {
   .candle3:nth-child(even) {
     flex-direction: column;
   }
+  .candle_img3 {
+    width: 90%;
+  }
+  .candle_img4 {
+    width: 70%;
+  }
 }
 
 /* FOOD  */
@@ -854,9 +860,25 @@ img {
   .food1:nth-child(even) {
     flex-direction: column;
   }
+  .food4 {
+    flex-direction: column;
+  }
+  .food4:nth-child(even) {
+    flex-direction: column;
+  }
   .food_img2 {
     width: 70%;
     top: 35%;
+  }
+  .food2 {
+    padding-top: 70%;
+  }
+  .food_img4 {
+    width: 90%;
+  }
+  .food_img6 {
+    width: 40%;
+    padding: 25% 0 0 50%;
   }
 }
 /* OutDoor */
@@ -909,13 +931,39 @@ img {
 }
 /* アウトドアSP */
 @media screen and (max-width: 811px) {
-  .outdoor1,
   .outdoor2,
   .outdoor3,
-  .outdoor4,
   .outdoor5 {
     padding-left: 0;
     display: block;
+  }
+  .outdoor1 {
+    flex-direction: column;
+  }
+  .outdoor1:nth-child(even) {
+    flex-direction: column;
+  }
+  .outdoor4 {
+    flex-direction: column;
+  }
+  .outdoor4:nth-child(even) {
+    flex-direction: column;
+  }
+  .outdoor_img2 {
+    width: 80%;
+  }
+  .outdoor_img3 {
+    width: 80%;
+    padding: 5% 0 5% 13%;
+  }
+  .outdoor_img6 {
+    width: 60%;
+  }
+  .outdoor_img7 {
+    width: 100%;
+  }
+  .outdoor_text5 {
+    padding: 10% 0 0 20%;
   }
 }
 
