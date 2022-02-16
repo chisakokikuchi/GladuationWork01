@@ -1,5 +1,80 @@
 @charset "utf-8";
 
+/* ローディングアニメーション */
+* {
+  margin: 0;
+  padding: 0;
+
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#loading {
+  width: 100vw;
+  height: 100vh;
+  transition: 8s;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.loading {
+  color: #000;
+  font-family: "Cormorant SC", serif;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50vh;
+  width: 70vh;
+  text-align: center;
+  font-size: 10vmin;
+}
+.loading > span {
+  opacity: 0;
+  color: #392d2b;
+}
+
+.loading > span:first-of-type {
+  animation: letterFade 5s ease-in-out infinite;
+  animation-delay: 0.1s;
+}
+
+.loading > span:nth-of-type(2) {
+  animation: letterFade 5s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+
+.loading > span:nth-of-type(3) {
+  animation: letterFade 5s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+
+.loading > span:nth-of-type(4) {
+  animation: letterFade 5s ease-in-out infinite;
+  animation-delay: 0.4s;
+}
+
+.loading > span:last-of-type {
+  animation: letterFade 5s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+.loaded {
+  opacity: 1;
+  visibility: hidden;
+}
+
+@keyframes letterFade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* ローディングアニメーション終了 */
+
 /* common */
 .header {
   margin-bottom: 0;
