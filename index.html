@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/style.css" />
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   </head>
   <body id="hygge" class="index" cz-shotcut-listen="true">
     <div id="loading">
@@ -21,729 +22,738 @@
       </div>
     </div>
     <!-- start header -->
-    <header class="header">
-      <div class="header_logo-wrap">
-        <div class="header_logo">
-          <a href="https://www.andersen.co.jp/">
-            <img
-              src="img/logo-01.png"
-              alt="パンからはじまる、ヒュッゲな暮らし。ベーカリー「アンデルセン」"/>
-          </a>
-        </div>
-      </div>      
-      <div class="header-guide">
-          <ul class="header-guide-list">
-            <li class="header-guide-list__item header-guide-list__item--sns">
-              <a href="https://www.facebook.com/andersen.jp/"
-                class="over"
-                target="_blank"
-              >
-                <span><i class="fab fa-facebook-f fa-lg" style="color: white;"></i></span>
-              </a>
-            </li>
-            <li class="header-guide-list__item header-guide-list__item--sns">
-              <a
-                href="https://www.instagram.com/andersen_official_jp/"
-                class="over"
-                target="_blank"
-              >
-                <span><i class="fab fa-instagram fa-lg"style=" color: white;"></i></span>
-              </a>
-            </li>
-            <li class="header-guide-list__item header-guide-list__item--nav">
-              <span></span>
-              <span></span>
-              <span></span>
-            </li>
-            <li
-              class="header-guide-list__item header-guide-list__item--recruit">
-              <a
-                href="https://www.andersen-group.jp/recruit/"
-                class="over"
-                target="_blank"
-                >RECRUIT
-              </a>
-            </li>
-            <li class="header-guide-list__item header-guide-list__item--ec">
-              <a
-                href="https://www.andersen-net.jp/shop/default.aspx"
-                class="over"
-                target="_blank"
-              >
-                <span>ONLINE SHOP</span>
-              </a>
-            </li>
-          </ul>
-      </div>
-      <div class="global-nav">
-          <ul class="global-nav-list">
-            <li class="global-nav-list__item">
-              <a href="https://www.andersen.co.jp/information/">
-                <span>新着</span>
-              </a>
-            </li>
-            <li class="global-nav-list__item">
-              <a href="https://www.andersen.co.jp/item/recommendation/">
-                <span>商品</span>
-              </a>
-              <div class="global-nav-list-sub-wrap img-none">
-                <ul class="global-nav-list-sub">
-                  <li class="global-nav-list-sub__item">
-                    <a href="/nutritional-information/">
-                      <span>栄養成分一覧</span>
-                    </a>
-                  </li>
-                  <li class="global-nav-list-sub__item">
-                    <a href="/assets/docs/item/allergens.pdf" target="_blank">
-                      <span>アレルゲン（28品目）一覧 pdf</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="global-nav-list__item">
-              <a href="https://www.andersen.co.jp/shop/">
-                <span>店舗</span>
-              </a>
-            </li>
-            <li class="global-nav-list__item">
-              <a href="https://www.andersen.co.jp/recipe/">
-                <span>レシピ</span>
-              </a>
-            </li>
-            <li class="global-nav-list__item">
-              <a href="/hygge/">
-                <span>アンデルセンの想い
-                  <!-- プルダウンメニュー　疑似要素が入る？ -->
-                </span>
-              </a>
-              <div class="global-nav-list-sub-wrap" style="opacity: 0; visibility: hidden;">
-                <ul class="global-nav-list-sub">
-                  <li class="global-nav-list-sub__item">
-                    <a href="/hygge/">
-                      <span>
-                        <img src="/assets/img/common/img-think-01.jpg" alt="" />
-                      </span>
-                      <span>アンデルセンの想い
-                      </span>
-                    </a>
-                  </li>
-                  <li class="global-nav-list-sub__item">
-                    <a href="/hygge/denmark.html">
-                      <span>
-                        <img src="/assets/img/common/img-think-02.jpg" alt="" />
-                      </span>
-                      <span>アンデルセンの志</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="global-nav-list__item">
-              <a href="https://www.andersen.co.jp/marguerite/">
-                <span>マーガレット・クラブ</span>
-              </a>
-            </li>
-            <li class="global-nav-list__item">
-              <a
-                href="https://www.andersen-net.jp/shop/default.aspx"
-                target="_blank"
-              >
-                <span>通販</span>
-              </a>
-            </li>
-          </ul>
-      </div>
-    </header>
-    <!-- end header -->
-    <!-- ハンバーガーメニュー内リンク global navi orverlay-->
-    <div class="global-nav-overlay">
-      <div class="contents">
-        <div class="global-nav-overlay-list">
-          <dl>
-            <dt class="global-nav-overlay-list_label">HOME</dt>
-            <dd class="global-nav-overlay-list_date">
-              <ul>
-                <li>
-                  <a href="https://www.andersen.co.jp/">ホーム</a>
-                </li>
-              </ul>
-            </dd>
-          </dl>
-        </div>
-        <div class="global-nav-overlay-list">
-          <dl>
-            <dt class="global-nav-overlay-list_label">
-            </dt>
-            <dd class="global-nav-overlay-list_date">
-              <ul>
-                <li>
-                  <a href="https://www.andersen.co.jp/item/">商品情報</a>
-                </li>
-                <li>
-                  <a href="">栄養成分一覧</a>
-                </li>
-                <li>
-                  <a href="">アレルゲン(28品目）一覧pdf</a>
-                </li>
-                <li>
-                  <a href="">ファーマーズブレッド</a>
-                </li>
-                <li>
-                  <a href="">アンデルセンイギリス</a>
-                </li>
-                <li>
-                  <a href="">デニッシュペストリー</a>
-                </li>
-              </ul>
-            </dd>
-          </dl>
-        </div>
-        <div class="global-nav-overlay-list">
-          <dl>
-            <dt class="global-nav-overlay-list_label">
-            </dt>
-            <dd class="global-nav-overlay-list_date">
-              <ul>
-                <li>
-                  <a href="">店舗情報</a>
-                </li>
-                <li>
-                  <a href="" target="_blank">広島アンデルセン</a>
-                </li>
-                <li>
-                  <a href="" target="_blank">青山アンデルセン</a>
-                </li>
-              </ul>
-            </dd>
-          </dl>
-        </div>
-        <div class="global-nav-overlay-list">
-          <dl>
-            <dt class="global-nav-overlay-list_label">
-            </dt>
-            <dd class="global-nav-overlay-list_date">
-              <ul>
-                <li>
-                  <a href="">会社概要</a>
-                </li>
-                <li>
-                  <a href="">代表挨拶</a>
-                </li>
-                <li>
-                  <a href="" target="_blank">採用情報</a>
-                </li>
-                <li>
-                  <a href="" target="_blank">アンデルセングループ</a>
-                </li>
-                <li>
-                  <a href="" target="_blank">ソーシャルメディア<br>ガイドライン</a>
-                </li>
-                <li>
-                  <a href="" target="_blank">個人情報保護方針</a>
-                </li>
-                <li>
-                  <a href="" target="_blank">ニュースリリース</a>
-                </li>
-                <li>
-                  <a href="">サイトマップ</a>
-                </li>
-                <li>
-                  <a href="" target="_blank">アンデルセンのメルヘン大賞</a>
-                </li>
-              </ul>
-            </dd>
-          </dl>
-        </div>
-      </div>
-    </div>
-    <!-- パンくずリスト -->
-    <div class="topic-path">
-      <ol
-        class="topic-path-list"
-        itemscope=""
-        itemtype="http://schema.org/BreadcrumbList"
-      >
-        <li
-          class="topic-path-list__item"
-          itemprop="itemListElement"
-          itemscope=""
-          itemtype="http://schema.org/ListItem"
-        >
-          <a itemprop="item" href="/"><span itemprop="name">HOME</span></a>
-        </li>
-        <li
-          class="topic-path-list__item"
-          itemprop="itemListElement"
-          itemscope=""
-          itemtype="http://schema.org/ListItem"
-        >
-          <a itemprop="item" href="/hygge/">
-            <span itemprop="name">アンデルセンの想い </span>
-          </a>
-        </li>
-      </ol>
-    </div>
-    <!-- パンくずリスト終了 -->
-    <!-- main -->
-    <div class="container">
-      <main class="main">
-        <article class="article">
-          <section class="sec-think" id="hygge">
-            <div class="think-kv">
-              <h1 class="ttl-01 think-kv__ttl">
-                <span lang="en">
-                  <img src="img/logo-andersen.png" width="294" alt="ANDERSEN Logo" />
-                </span>
-                <span lang="ja">
-                  アンデルセンの想い 
-                </span>
-              </h1>
-                <!-- メインビジュアル -->
-                <div class="think-kv__img js-img-fit">
-                  <img src="img/img001.jpg" alt="アンデルセンの想い画像" />
-                </div>
-            </div>
-              <!-- index -->
-              <div class="contents">
-                <section class="contents__think">
-                  <h2 class="contents__think__ttl">
-                    <span>HYGGE</span>
-                    <br />
-                    まいにちに、ヒュッゲ。
-                  </h2>
-                  <div class="contents__think__lead">
-                    <p>
-                      1959年、デニッシュペストリーとの出会いからはじまった
-                      <br />
-                      デンマークの人々との交流のなかで私たちが
-                      <br />
-                      もっともお手本にしたいと思ったこと、
-                      <br />
-                      それが"ヒュッゲ"でした。
-                    </p>
-                    <p>
-                      ヒュッゲ…デンマーク語で
-                      <br />
-                      「人と人とのふれあいから生まれる、温かな居心地のよい雰囲気」という意味。
-                      <br />
-                      デンマークの人たちがとても大切にしている言葉です。
-                    </p>
-                  </div>
-                  <div class="contents__think__lead2">
-                    <div class="hygge-img">
-                      <img src="img/img002.jpg" alt="ヒュッゲ画像" />
-                    </div>
-                    <div class="lead2">
-                      デンマークの人たちは、
-                      <br />
-                      日々の暮らしに心地よさを見つけ
-                      <br />
-                      暮らしを豊かに楽しむこと
-                      <br />
-                      ”ヒュッゲ”を大切にしています。
-                    </div>
-                  </div>
-                </section>
-              </div>
-          </section>
-  <!-- At Home のセクション --><!-- ライフスタイルのサイトを参考 モーニングetc-->
-          <section class="all_sub_follow_sec hygge_athome" id="atHome">
-            <div class="all_sub_container content">
-              <div class="title_sec">
-                <p class="all_title_top">
-                  <span class="all_title_inner _anime">
-                    At Home
-                  </span>
-                  <h3 class="all_title_head _anime">
-                    家族や友人と
-                    <br>
-                    過ごすひととき
-                  </h3>
-                </p>
-              </div>
-              <div class="athome1">
-                <div class="hygge_flow_text athome_text1 order2">
-                  <p>
-                  自宅に招いてホームパーティを
-                  <br>
-                  することが多いデンマークの
-                  <br>
-                  人たちは、気張らずに自然に
-                  <br>
-                  もてなすことがとても上手。
-                  </p>
-                </div>
-                <div class="hygge_athome_img athome_img1 order1">
-                  <img src="img/img003.jpg" alt="HYGGE atHome画像">
-                  </div>
-                </div>
-              <!-- <div class="hygge_flow_sec"> -->
-              <div class="athome2">
-                <div class="hygge_athome_img athome_img2 order3 _anime">
-                <img src="img/img004.jpg" alt="Hygge AtHomeの画像">
-                </div>
-                <div class="hygge_flow_text athome_text2 order4">
-                  <p class="athome_text2">
-                  お料理を持ち寄ったり、
-                  <br>
-                  普段と変わらないものを
-                  <br>
-                  みんなでシェアする。
-                  </p>
-                </div>
-              </div>
-              <div class="athome3">
-                <div class="hygge_flow_text athome_text3 order2">  
-                    <p>
-                    自然体で、心地よい空間を
-                    <br>
-                    一緒に過ごすことが
-                    <br>
-                    ヒュッゲに繋がります。
-                    </p>
-                </div>
-                <div class="hygge_athome_img athome_img3 order1 _anime">
-                    <img src="img/img005.jpg" alt="Hygge AtHomeの画像">
-                </div>
-              </div>
-              <div class="athome4">
-                <div class="hygge_athome_img athome_img4 order7 _anime">
-                  <img src="img/img006.jpg" alt="Hygge AtHomeの画像">
-                </div>
-                <div class="hygge_flow_text athome_text4 order8">
-                  <p class="athome_text4">
-                  ステイホームの毎日に
-                  <br>
-                  ちょっと工夫して
-                  <br>
-                  ヒュッゲに過ごしてみませんか。
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- Candle のセクション  段落確認-->
-          <section class="all_sub_follow_sec hygge_candle" id="candle">
-            <div class="all_sub_container content">
-              <div class="title_sec">
-                <p class="all_title_top">
-                  <span class="all_title_inner _anime">
-                    Candle
-                  </span>
-                  <h3 class="all_title_head _anime">
-                    キャンドル
-                  </h3>
-                </p>
-              </div>
-              <div class="candle1">
-                <div class="hygge_flow_text candle_text1 order2">
-                  <p>
-                    ヒュッゲに過ごすためにキャンドルは
-                    <br>
-                    欠かせないアイテム。
-                    <br>
-                    ゆらめく炎はリラックス効果を
-                    <br>
-                    高めてくれます。
-                  </p>
-                </div>
-                <div class="hygge_candle_img candle_img1 order1 _anime">
-                  <img src="img/img007.jpg" alt="HYGGE candle画像">
-                </div>
-              </div>
-              <div class="candle2">
-                <div class="hygge_candle_img candle_img2 _anime">
-                  <img src="img/img008.jpg" alt="Hygge Candleの画像">
-                </div>
-                <div class="hygge_flow_text candle_text2">
-                  <p>
-                    長く厳しい冬を、家で過ごすことが多い
-                    <br>
-                    デンマークの人たちは快適に過ごすため
-                    <br>
-                    キャンドルや間接照明を使って
-                    <br>
-                    部屋を灯します。
-                  </p>
-                </div>
-              </div>
-              <div class="candle3">
-                <div class="hygge_flow_text candle_text3 order2">
-                  <p>
-                    リビングはもちろん
-                    <br>
-                    ダイニングやキッチン
-                    <br>
-                    窓辺にもキャンドルを灯して
-                    <br>
-                    ゆったりと過ごします。
-                  </p>
-                </div>
-                <div class="hygge_candle_img candle_img3 order1 _anime">
-                  <img src="img/img009.JPG" alt="Hygge Candleの画像">
-                </div>
-              </div>  
-              <div class="candle4">
-                <div class="hygge_candle_img candle_img4 _anime">
-                  <img src="img/img010.jpg" alt="Hygge Candleの画像">
-                </div>
-                <div class="hygge_flow_text candle_text4">
-                  <p>
-                    特別な日だけでなく
-                    <br>
-                    キャンドルを日常使いすることで
-                    <br>
-                    ヒュッゲに過ごします。
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- Food のセクション-->
-          <section class="all_sub_follow_sec hygge_food" id="food">
-            <div class="all_sub_container content">
-              <div class="title_sec">
-                <p class="all_title_top">
-                  <span class="all_title_inner _anime">
-                    Food
-                  </span>
-                  <h3 class="all_title_head _anime">
-                    食べ物
-                  </h3>
-                </p>
-              </div>
-              <div class="food1">
-                <div class="hygge_flow_text food_text1 order2">
-                  <p>
-                    デンマークといえばオープンサンド。
-                    <br>
-                    パンにたっぷりのバターを塗って
-                    <br>
-                    食材を彩りよく重ねた伝統料理です。
-                  </p>
-                </div>
-                <div class="food_main_img order1">
-                  <img src="img/img011.jpg" alt="HYGGE food画像">
-                </div>
-              </div>
-              <div class="hygge_food_img food_img2 _anime">
-                <img src="img/img012.jpg" alt="Hygge foodの画像">
-              </div>
-              <div class="food2">
-                <div class="hygge_flow_text food_text2">
-                  <p>
-                    自宅で手軽に作ることもあれば
-                    <br>
-                    レストランで伝統的なメニューを
-                    <br>
-                    テイクアウトで楽しむことも。
-                  </p>
-                </div>
-                <div class="hygge_food_img food_img3 _anime">
-                  <img src="img/img013.jpg" alt="Hygge foodの画像">
-                </div>
-              </div>
-              <div class="food3">
-                <div class="hygge_food_img food_img4 _anime">
-                  <img src="img/img014.jpg" alt="Hygge foodの画像">
-                </div>
-                <div class="hygge_flow_text food_text3">
-                  <p>
-                    もちろん、会話を楽しみながら
-                    <br>
-                    心地よい空間づくりも忘れません。
-                  </p>
-                </div>
-              </div>
-              <div class="food4">
-                <div class="hygge_flow_text food_text4 order2">
-                  <p>
-                    コーヒーブレイクには
-                    <br>
-                    デニッシュをつまみながら
-                    <br>
-                    さらにヒュッゲなひとときになりそう。
-                  </p>
-                </div>
-                <div class="hygge_food_img food_img5 order1 _anime">
-                  <img src="img/img015.jpg" alt="Hygge foodの画像">
-                </div>
-              </div>
-              <div class="hygge_food_img food_img6 _anime">
-                <img src="img/img016.jpg" alt="Hygge foodの画像">
-              </div>
-            </div>
-          </section>
-<!-- Outdoorのセクション -->
-          <section class="all_sub_follow_sec hygge_outdoor" id="outDoor">
-            <div class="all_sub_container content">
-              <div class="title_sec outdoor_ttl">
-                <p class="all_title_top">
-                  <span class="all_title_inner _anime">
-                    Out Door
-                  </span>
-                  <h3 class="all_title_head _anime">
-                    外で過ごす時間
-                  </h3>
-                </p>
-              </div>
-              <div class="outdoor1">
-                <div class="hygge_flow_text outdoor_text1 order2">
-                  <p>
-                     冬は家で過ごす時間が長いので
-                    <br>
-                    太陽が出る短い夏を外で満喫する
-                    <br>
-                    のもデンマークならでは。
-                    <br>
-                    <br>
-                    オープンテラスでお茶をしたり
-                    <br>
-                    庭やベランダにテーブルを出して
-                    <br>
-                    ランチやピクニックを楽しみます。
-                  </p>
-                </div>  
-                <div class="outdoor_img1 order1">
-                  <img src="img/img017.jpg" alt="HYGGE outdoor画像">
-                </div>
-              </div>
-              <div class="outdoor2">
-                <div class="hygge_outdoor_img outdoor_img2 _anime">
-                    <img src="img/img0017.jpg" alt="Hygge outdoorの画像">
-                </div>
-                <div class="hygge_outdoor_img outdoor_img3 _anime">
-                    <img src="img/img018.jpg" alt="Hygge outdoorの画像">
-                </div>
-              </div>
-              <div class="outdoor3">
-                <div class="hygge_outdoor_img outdoor_img4 _anime">
-                    <img src="img/img019.jpg" alt="Hygge outdoorの画像">
-                </div>
-                <div class="hygge_flow_text outdoor_text3">
-                    <p>
-                      コペンハーゲンは運河の街なので
-                      <br>
-                      夏になると泳ぐ人も見られます。
-                    </p>
-                </div>
-              </div>
-              <div class="outdoor4">
-                <div class="hygge_flow_text outdoor_text4 order2">
-                  <p>
-                    自転車道が整備されているデンマークでは
-                    <br>
-                    自転車での移動が盛ん。
-                    <br>
-                    電車に持ち込んで移動することも。
-                  </p>
-                </div>
-                <div class="hygge_outdoor_img outdoor_img5 order1 _anime">
-                  <img src="img/img023.jpg" alt="Hygge outdoorの画像">
-                </div>
-              </div>
-              <div class="hygge_outdoor_img outdoor_img6 _anime">
-                <img src="img/img021.jpg" alt="Hygge hygge_outdoor">
-              </div>                
-              <div class="outdoor5">
-                <div class="hygge_outdoor_img outdoor_img7 _anime">
-                <img src="img/img022.jpg" alt="Hygge outdoorの画像">
-                </div>
-                <div class="hygge_flow_text outdoor_text5">
-                  <p>
-                    短い夏、太陽のもとで
-                    <br>
-                    自然を満喫することも
-                    <br>
-                    ヒュッゲです。
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-<!-- まとめとリンクバナー -->
-        <section class="closing_sec">
-          <h2 class="contents__closing__ttl">
-            <span>HYGGE</span>
-            <br/>
-            まいにちに、ヒュッゲ。
-          </h2>
-          <p class="contents__closing__text">
-            パンを通じてみなさまのまいにちに
-            <br>
-            ヒュッゲをお届けできる
-            <br>
-            ベーカリーでありたいと想っています。
-          </p>
-          <div class="contents-banner">
-            <div class="contents-banner-inner">
-              <a href="https://www.andersen.co.jp/hygge/denmark.html" class="over">
-                <h2 class="content-banner__ttl">
-                  <span>アンデルセンの志</span>
-                </h2>
-              </a>
-            </div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header_logo-wrap">
+          <div class="header_logo">
+            <a href="https://www.andersen.co.jp/">
+              <img
+                src="img/logo-01.png"
+                alt="パンからはじまる、ヒュッゲな暮らし。ベーカリー「アンデルセン」"/>
+            </a>
           </div>
-        </section>
-        </article>
-      </main>
-    </div>
-<!-- アンデルセンの志のリンクボタン -->
-    <div class="floating-box">
-      <p class="rink-btn">
-        <a href="https://www.andersen.co.jp/hygge/denmark.html"
-          >アンデルセンの志
-        </a>
-      </p>
-    </div>
-<!-- ライフスタイルサイト参考　リンクボタン -->
-    <div class="navlist_sec">
-      <ul class="navlist">
-        <li>
-          <a href="#hygge" class="_on"> Top </a>
-        </li>
-        <li>
-          <a href="#atHome" class> At Home </a>
-        </li>
-        <li>
-          <a href="#candle"> Candle </a>
-        </li>
-        <li>
-          <a href="#food"> Food </a>
-        </li>
-        <li>
-          <a href="#outDoor"> Out Door </a>
-        </li>
-      </ul>
-    </div>
-<!-- リンクボタン -->
-    <div class="page-top">
-      <a href="#" style="opacity: 1; pointer-events: auto; position: fixed;">
-      PAGE TOP
-      </a>
-    </div>
-<!-- ここまでリンクボタン　確認 -->
-    <!-- start footer -->
-    <footer>
-      <div class="footer-bottom">
+        </div>      
+        <div class="header-guide">
+            <ul class="header-guide-list">
+              <li class="header-guide-list__item header-guide-list__item--sns">
+                <a href="https://www.facebook.com/andersen.jp/"
+                  class="over"
+                  target="_blank"
+                >
+                  <span><i class="fab fa-facebook-f fa-lg" style="color: white;"></i></span>
+                </a>
+              </li>
+              <li class="header-guide-list__item header-guide-list__item--sns">
+                <a
+                  href="https://www.instagram.com/andersen_official_jp/"
+                  class="over"
+                  target="_blank"
+                >
+                  <span><i class="fab fa-instagram fa-lg"style=" color: white;"></i></span>
+                </a>
+              </li>
+              <li class="header-guide-list__item header-guide-list__item--nav">
+                <span></span>
+                <span></span>
+                <span></span>
+              </li>
+              <li
+                class="header-guide-list__item header-guide-list__item--recruit">
+                <a
+                  href="https://www.andersen-group.jp/recruit/"
+                  class="over"
+                  target="_blank"
+                  >RECRUIT
+                </a>
+              </li>
+              <li class="header-guide-list__item header-guide-list__item--ec">
+                <a
+                  href="https://www.andersen-net.jp/shop/default.aspx"
+                  class="over"
+                  target="_blank"
+                >
+                  <span>ONLINE SHOP</span>
+                </a>
+              </li>
+            </ul>
+        </div>
+        <div class="global-nav">
+            <ul class="global-nav-list">
+              <li class="global-nav-list__item">
+                <a href="https://www.andersen.co.jp/information/">
+                  <span>新着</span>
+                </a>
+              </li>
+              <li class="global-nav-list__item">
+                <a href="https://www.andersen.co.jp/item/recommendation/">
+                  <span>商品</span>
+                </a>
+                <div class="global-nav-list-sub-wrap img-none">
+                  <ul class="global-nav-list-sub">
+                    <li class="global-nav-list-sub__item">
+                      <a href="/nutritional-information/">
+                        <span>栄養成分一覧</span>
+                      </a>
+                    </li>
+                    <li class="global-nav-list-sub__item">
+                      <a href="/assets/docs/item/allergens.pdf" target="_blank">
+                        <span>アレルゲン（28品目）一覧 pdf</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="global-nav-list__item">
+                <a href="https://www.andersen.co.jp/shop/">
+                  <span>店舗</span>
+                </a>
+              </li>
+              <li class="global-nav-list__item">
+                <a href="https://www.andersen.co.jp/recipe/">
+                  <span>レシピ</span>
+                </a>
+              </li>
+              <li class="global-nav-list__item">
+                <a href="/hygge/">
+                  <span>アンデルセンの想い
+                    <!-- プルダウンメニュー　疑似要素が入る？ -->
+                  </span>
+                </a>
+                <div class="global-nav-list-sub-wrap" style="opacity: 0; visibility: hidden;">
+                  <ul class="global-nav-list-sub">
+                    <li class="global-nav-list-sub__item">
+                      <a href="/hygge/">
+                        <span>
+                          <img src="/assets/img/common/img-think-01.jpg" alt="" />
+                        </span>
+                        <span>アンデルセンの想い
+                        </span>
+                      </a>
+                    </li>
+                    <li class="global-nav-list-sub__item">
+                      <a href="/hygge/denmark.html">
+                        <span>
+                          <img src="/assets/img/common/img-think-02.jpg" alt="" />
+                        </span>
+                        <span>アンデルセンの志</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="global-nav-list__item">
+                <a href="https://www.andersen.co.jp/marguerite/">
+                  <span>マーガレット・クラブ</span>
+                </a>
+              </li>
+              <li class="global-nav-list__item">
+                <a
+                  href="https://www.andersen-net.jp/shop/default.aspx"
+                  target="_blank"
+                >
+                  <span>通販</span>
+                </a>
+              </li>
+            </ul>
+        </div>
+      </header>
+      <!-- end header -->
+      <!-- ハンバーガーメニュー内リンク global navi orverlay-->
+      <div class="global-nav-overlay">
         <div class="contents">
-          <ul class="footer-bottom-nav">
-            <li class="footer-bottom-nav__item">
-              <a href="https://www.andersen-group.jp/privacy/" target="_blank"
-                >個人情報保護方針</a
-              >
-            </li>
-            <li class="footer-bottom-nav__item">
-              <a href="/sitemap/">サイトマップ</a>
-            </li>
-          </ul>
-          <div class="footer-bottom__copyright">
-            ©2022 ANDERSEN Co.,Ltd All Rights Reserved.
+          <div class="global-nav-overlay-list">
+            <dl>
+              <dt class="global-nav-overlay-list_label">HOME</dt>
+              <dd class="global-nav-overlay-list_date">
+                <ul>
+                  <li>
+                    <a href="https://www.andersen.co.jp/">ホーム</a>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+          <div class="global-nav-overlay-list">
+            <dl>
+              <dt class="global-nav-overlay-list_label">
+              </dt>
+              <dd class="global-nav-overlay-list_date">
+                <ul>
+                  <li>
+                    <a href="https://www.andersen.co.jp/item/">商品情報</a>
+                  </li>
+                  <li>
+                    <a href="">栄養成分一覧</a>
+                  </li>
+                  <li>
+                    <a href="">アレルゲン(28品目）一覧pdf</a>
+                  </li>
+                  <li>
+                    <a href="">ファーマーズブレッド</a>
+                  </li>
+                  <li>
+                    <a href="">アンデルセンイギリス</a>
+                  </li>
+                  <li>
+                    <a href="">デニッシュペストリー</a>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+          <div class="global-nav-overlay-list">
+            <dl>
+              <dt class="global-nav-overlay-list_label">
+              </dt>
+              <dd class="global-nav-overlay-list_date">
+                <ul>
+                  <li>
+                    <a href="">店舗情報</a>
+                  </li>
+                  <li>
+                    <a href="" target="_blank">広島アンデルセン</a>
+                  </li>
+                  <li>
+                    <a href="" target="_blank">青山アンデルセン</a>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+          <div class="global-nav-overlay-list">
+            <dl>
+              <dt class="global-nav-overlay-list_label">
+              </dt>
+              <dd class="global-nav-overlay-list_date">
+                <ul>
+                  <li>
+                    <a href="">会社概要</a>
+                  </li>
+                  <li>
+                    <a href="">代表挨拶</a>
+                  </li>
+                  <li>
+                    <a href="" target="_blank">採用情報</a>
+                  </li>
+                  <li>
+                    <a href="" target="_blank">アンデルセングループ</a>
+                  </li>
+                  <li>
+                    <a href="" target="_blank">ソーシャルメディア<br>ガイドライン</a>
+                  </li>
+                  <li>
+                    <a href="" target="_blank">個人情報保護方針</a>
+                  </li>
+                  <li>
+                    <a href="" target="_blank">ニュースリリース</a>
+                  </li>
+                  <li>
+                    <a href="">サイトマップ</a>
+                  </li>
+                  <li>
+                    <a href="" target="_blank">アンデルセンのメルヘン大賞</a>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
           </div>
         </div>
       </div>
-    </footer>
+      <!-- パンくずリスト -->
+      <div class="topic-path">
+        <ol
+          class="topic-path-list"
+          itemscope=""
+          itemtype="http://schema.org/BreadcrumbList"
+        >
+          <li
+            class="topic-path-list__item"
+            itemprop="itemListElement"
+            itemscope=""
+            itemtype="http://schema.org/ListItem"
+          >
+            <a itemprop="item" href="/"><span itemprop="name">HOME</span></a>
+          </li>
+          <li
+            class="topic-path-list__item"
+            itemprop="itemListElement"
+            itemscope=""
+            itemtype="http://schema.org/ListItem"
+          >
+            <a itemprop="item" href="/hygge/">
+              <span itemprop="name">アンデルセンの想い </span>
+            </a>
+          </li>
+        </ol>
+      </div>
+      <!-- パンくずリスト終了 -->
+      <!-- main -->
+      <div class="container">
+        <main class="main">
+          <article class="article">
+            <section class="sec-think" id="hygge">
+              <div class="think-kv">
+                <h1 class="ttl-01 think-kv__ttl">
+                  <span lang="en">
+                    <img src="img/logo-andersen.png" width="294" alt="ANDERSEN Logo" />
+                  </span>
+                  <span lang="ja">
+                    アンデルセンの想い 
+                  </span>
+                </h1>
+                  <!-- メインビジュアル -->
+                  <div class="think-kv__img js-img-fit">
+                    <img src="img/img001.jpg" alt="アンデルセンの想い画像" />
+                  </div>
+              </div>
+                <!-- index -->
+                <div class="contents">
+                  <section class="contents__think">
+                    <h2 class="contents__think__ttl">
+                      <span>HYGGE</span>
+                      <br />
+                      まいにちに、ヒュッゲ。
+                    </h2>
+                    <div class="contents__think__lead">
+                      <p>
+                        1959年、デニッシュペストリーとの
+                        <br class="br-sp">
+                        出会いからはじまった
+                        <br>
+                        デンマークの人々との交流のなかで私たちが
+                        <br>
+                        もっともお手本にしたいと思ったこと、
+                        <br>
+                        それが"ヒュッゲ"でした。
+                      </p>
+                      <p>
+                        ヒュッゲ…デンマーク語で
+                        <br>
+                        「人と人とのふれあいから生まれる、
+                        <br class="br-sp">
+                        温かな居心地のよい雰囲気」という意味。
+                        <br>
+                        デンマークの人たちが
+                        <br class="br-sp">
+                        とても大切にしている言葉です。
+                      </p>
+                    </div>
+                    <div class="contents__think__lead2">
+                      <div class="hygge-img">
+                        <img src="img/img002.jpg" alt="ヒュッゲ画像" />
+                      </div>
+                      <div class="lead2">
+                        デンマークの人たちは、
+                        <br />
+                        日々の暮らしに心地よさを見つけ
+                        <br />
+                        暮らしを豊かに楽しむこと
+                        <br />
+                        ”ヒュッゲ”を大切にしています。
+                      </div>
+                    </div>
+                  </section>
+                </div>
+            </section>
+    <!-- At Home のセクション --><!-- ライフスタイルのサイトを参考 モーニングetc-->
+            <section class="all_sub_follow_sec hygge_athome" id="atHome">
+              <div class="all_sub_container content">
+                <div class="title_sec fadeInDownTrigger">
+                  <p class="all_title_top">
+                    <span class="all_title_inner _anime">
+                      At Home
+                    </span>
+                    <h3 class="all_title_head _anime">
+                      家族や友人と
+                      <br>
+                      過ごすひととき
+                    </h3>
+                  </p>
+                </div>
+                <div class="athome1">
+                  <div class="hygge_flow_text athome_text1 order2">
+                    <p>
+                    自宅に招いてホームパーティを
+                    <br>
+                    することが多いデンマークの
+                    <br>
+                    人たちは、気張らずに自然に
+                    <br>
+                    もてなすことがとても上手。
+                    </p>
+                  </div>
+                  <div class="hygge_athome_img athome_img1 order1 effect-fade">
+                    <img src="img/img003.jpg" alt="HYGGE atHome画像">
+                    </div>
+                  </div>
+                <!-- <div class="hygge_flow_sec"> -->
+                <div class="athome2">
+                  <div class="hygge_athome_img athome_img2 order3 _anime effect-fade">
+                  <img src="img/img004.jpg" alt="Hygge AtHomeの画像">
+                  </div>
+                  <div class="hygge_flow_text athome_text2 order4">
+                    <p class="athome_text2">
+                    お料理を持ち寄ったり、
+                    <br>
+                    普段と変わらないものを
+                    <br>
+                    みんなでシェアする。
+                    </p>
+                  </div>
+                </div>
+                <div class="athome3">
+                  <div class="hygge_flow_text athome_text3 order2">  
+                      <p>
+                      自然体で、心地よい空間を
+                      <br>
+                      一緒に過ごすことが
+                      <br>
+                      ヒュッゲに繋がります。
+                      </p>
+                  </div>
+                  <div class="hygge_athome_img athome_img3 order1 effect-fade _anime">
+                      <img src="img/img005.jpg" alt="Hygge AtHomeの画像">
+                  </div>
+                </div>
+                <div class="athome4">
+                  <div class="hygge_athome_img athome_img4 order7 effect-fade _anime">
+                    <img src="img/img006.jpg" alt="Hygge AtHomeの画像">
+                  </div>
+                  <div class="hygge_flow_text athome_text4 order8">
+                    <p class="athome_text4">
+                    ステイホームの毎日に
+                    <br>
+                    ちょっと工夫して
+                    <br>
+                    ヒュッゲに過ごしてみませんか。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Candle のセクション  段落確認-->
+            <section class="all_sub_follow_sec hygge_candle" id="candle">
+              <div class="all_sub_container content">
+                <div class="title_sec fadeInDownTrigger">
+                  <p class="all_title_top">
+                    <span class="all_title_inner _anime">
+                      Candle
+                    </span>
+                    <h3 class="all_title_head _anime">
+                      キャンドル
+                    </h3>
+                  </p>
+                </div>
+                <div class="candle1">
+                  <div class="hygge_flow_text candle_text1 order2">
+                    <p>
+                      ヒュッゲに過ごすためにキャンドルは
+                      <br>
+                      欠かせないアイテム。
+                      <br>
+                      ゆらめく炎はリラックス効果を
+                      <br>
+                      高めてくれます。
+                    </p>
+                  </div>
+                  <div class="hygge_candle_img candle_img1 order1 effect-fade _anime">
+                    <img src="img/img007.jpg" alt="HYGGE candle画像">
+                  </div>
+                </div>
+                <div class="candle2">
+                  <div class="hygge_candle_img candle_img2 effect-fade _anime">
+                    <img src="img/img008.jpg" alt="Hygge Candleの画像">
+                  </div>
+                  <div class="hygge_flow_text candle_text2">
+                    <p>
+                      長く厳しい冬を、家で過ごすことが多い
+                      <br>
+                      デンマークの人たちは快適に過ごすため
+                      <br>
+                      キャンドルや間接照明を使って
+                      <br>
+                      部屋を灯します。
+                    </p>
+                  </div>
+                </div>
+                <div class="candle3">
+                  <div class="hygge_flow_text candle_text3 order2">
+                    <p>
+                      リビングはもちろん
+                      <br>
+                      ダイニングやキッチン
+                      <br>
+                      窓辺にもキャンドルを灯して
+                      <br>
+                      ゆったりと過ごします。
+                    </p>
+                  </div>
+                  <div class="hygge_candle_img candle_img3 order1 effect-fade _anime">
+                    <img src="img/img009.JPG" alt="Hygge Candleの画像">
+                  </div>
+                </div>  
+                <div class="candle4">
+                  <div class="hygge_candle_img candle_img4 effect-fade _anime">
+                    <img src="img/img010.jpg" alt="Hygge Candleの画像">
+                  </div>
+                  <div class="hygge_flow_text candle_text4">
+                    <p>
+                      特別な日だけでなく
+                      <br>
+                      キャンドルを日常使いすることで
+                      <br>
+                      ヒュッゲに過ごします。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Food のセクション-->
+            <section class="all_sub_follow_sec hygge_food" id="food">
+              <div class="all_sub_container content">
+                <div class="title_sec fadeInDownTrigger">
+                  <p class="all_title_top">
+                    <span class="all_title_inner _anime">
+                      Food
+                    </span>
+                    <h3 class="all_title_head _anime">
+                      食べ物
+                    </h3>
+                  </p>
+                </div>
+                <div class="food1">
+                  <div class="hygge_flow_text food_text1 order2">
+                    <p>
+                      デンマークといえばオープンサンド。
+                      <br>
+                      パンにたっぷりのバターを塗って
+                      <br>
+                      食材を彩りよく重ねた伝統料理です。
+                    </p>
+                  </div>
+                  <div class="food_main_img order1 effect-fade">
+                    <img src="img/img011.jpg" alt="HYGGE food画像">
+                  </div>
+                </div>
+                <div class="hygge_food_img food_img2 effect-fade _anime">
+                  <img src="img/img012.jpg" alt="Hygge foodの画像">
+                </div>
+                <div class="food2">
+                  <div class="hygge_flow_text food_text2">
+                    <p>
+                      自宅で手軽に作ることもあれば
+                      <br>
+                      レストランで伝統的なメニューを
+                      <br>
+                      テイクアウトで楽しむことも。
+                    </p>
+                  </div>
+                  <div class="hygge_food_img food_img3 effect-fade _anime">
+                    <img src="img/img013.jpg" alt="Hygge foodの画像">
+                  </div>
+                </div>
+                <div class="food3">
+                  <div class="hygge_food_img food_img4 effect-fade _anime">
+                    <img src="img/img014.jpg" alt="Hygge foodの画像">
+                  </div>
+                  <div class="hygge_flow_text food_text3">
+                    <p>
+                      もちろん、会話を楽しみながら
+                      <br>
+                      心地よい空間づくりも忘れません。
+                    </p>
+                  </div>
+                </div>
+                <div class="food4">
+                  <div class="hygge_flow_text food_text4 order2">
+                    <p>
+                      コーヒーブレイクには
+                      <br>
+                      デニッシュをつまみながら
+                      <br>
+                      さらにヒュッゲなひとときになりそう。
+                    </p>
+                  </div>
+                  <div class="hygge_food_img food_img5 order1 effect-fade _anime">
+                    <img src="img/img015.jpg" alt="Hygge foodの画像">
+                  </div>
+                </div>
+                <div class="hygge_food_img food_img6 effect-fade _anime">
+                  <img src="img/img016.jpg" alt="Hygge foodの画像">
+                </div>
+              </div>
+            </section>
+  <!-- Outdoorのセクション -->
+            <section class="all_sub_follow_sec hygge_outdoor" id="outDoor">
+              <div class="all_sub_container content">
+                <div class="title_sec outdoor_ttl">
+                  <p class="all_title_top">
+                    <span class="all_title_inner _anime">
+                      Out Door
+                    </span>
+                    <h3 class="all_title_head _anime">
+                      外で過ごす時間
+                    </h3>
+                  </p>
+                </div>
+                <div class="outdoor1">
+                  <div class="hygge_flow_text outdoor_text1 order2">
+                    <p>
+                       冬は家で過ごす時間が長いので
+                      <br>
+                      太陽が出る短い夏を外で満喫する
+                      <br>
+                      のもデンマークならでは。
+                      <br>
+                      <br>
+                      オープンテラスでお茶をしたり
+                      <br>
+                      庭やベランダにテーブルを出して
+                      <br>
+                      ランチやピクニックを楽しみます。
+                    </p>
+                  </div>  
+                  <div class="outdoor_img1 order1 effect-fade">
+                    <img src="img/img017.jpg" alt="HYGGE outdoor画像">
+                  </div>
+                </div>
+                <div class="outdoor2">
+                  <div class="hygge_outdoor_img outdoor_img2 effect-fade _anime">
+                      <img src="img/img0017.jpg" alt="Hygge outdoorの画像">
+                  </div>
+                  <div class="hygge_outdoor_img outdoor_img3 effect-fade _anime">
+                      <img src="img/img018.jpg" alt="Hygge outdoorの画像">
+                  </div>
+                </div>
+                <div class="outdoor3">
+                  <div class="hygge_outdoor_img outdoor_img4 effect-fade _anime">
+                      <img src="img/img019.jpg" alt="Hygge outdoorの画像">
+                  </div>
+                  <div class="hygge_flow_text outdoor_text3">
+                      <p>
+                        コペンハーゲンは運河の街なので
+                        <br>
+                        夏になると泳ぐ人も見られます。
+                      </p>
+                  </div>
+                </div>
+                <div class="outdoor4">
+                  <div class="hygge_flow_text outdoor_text4 order2">
+                    <p>
+                      自転車道が整備されているデンマークでは
+                      <br>
+                      自転車での移動が盛ん。
+                      <br>
+                      電車に持ち込んで移動することも。
+                    </p>
+                  </div>
+                  <div class="hygge_outdoor_img outdoor_img5 order1 effect-fade _anime">
+                    <img src="img/img023.jpg" alt="Hygge outdoorの画像">
+                  </div>
+                </div>
+                <div class="hygge_outdoor_img outdoor_img6 effect-fade _anime">
+                  <img src="img/img021.jpg" alt="Hygge hygge_outdoor">
+                </div>                
+                <div class="outdoor5">
+                  <div class="hygge_outdoor_img outdoor_img7 effect-fade _anime">
+                  <img src="img/img022.jpg" alt="Hygge outdoorの画像">
+                  </div>
+                  <div class="hygge_flow_text outdoor_text5">
+                    <p>
+                      短い夏、太陽のもとで
+                      <br>
+                      自然を満喫することも
+                      <br>
+                      ヒュッゲです。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+  <!-- まとめとリンクバナー -->
+          <section class="closing_sec">
+            <h2 class="contents__closing__ttl">
+              <span>HYGGE</span>
+              <br/>
+              まいにちに、ヒュッゲ。
+            </h2>
+            <p class="contents__closing__text">
+              パンを通じてみなさまのまいにちに
+              <br>
+              ヒュッゲをお届けできる
+              <br>
+              ベーカリーでありたいと想っています。
+            </p>
+            <div class="contents-banner">
+              <div class="contents-banner-inner">
+                <a href="https://www.andersen.co.jp/hygge/denmark.html" class="over">
+                  <h2 class="content-banner__ttl">
+                    <span>アンデルセンの志</span>
+                  </h2>
+                </a>
+              </div>
+            </div>
+          </section>
+          </article>
+        </main>
+      </div>
+  <!-- アンデルセンの志のリンクボタン -->
+      <div class="floating-box">
+        <p class="rink-btn">
+          <a href="https://www.andersen.co.jp/hygge/denmark.html"
+            >アンデルセンの志
+          </a>
+        </p>
+      </div>
+  <!-- ライフスタイルサイト参考　リンクボタン -->
+      <div class="navlist_sec">
+        <ul class="navlist">
+          <li>
+            <a href="#hygge" class="_on"> Top </a>
+          </li>
+          <li>
+            <a href="#atHome" class> At Home </a>
+          </li>
+          <li>
+            <a href="#candle"> Candle </a>
+          </li>
+          <li>
+            <a href="#food"> Food </a>
+          </li>
+          <li>
+            <a href="#outDoor"> Out Door </a>
+          </li>
+        </ul>
+      </div>
+  <!-- リンクボタン -->
+      <div class="page-top">
+        <a href="#" style="opacity: 1; pointer-events: auto; position: fixed;">
+        PAGE TOP
+        </a>
+      </div>
+  <!-- ここまでリンクボタン　確認 -->
+      <!-- start footer -->
+      <footer>
+        <div class="footer-bottom">
+          <div class="contents">
+            <ul class="footer-bottom-nav">
+              <li class="footer-bottom-nav__item">
+                <a href="https://www.andersen-group.jp/privacy/" target="_blank"
+                  >個人情報保護方針</a
+                >
+              </li>
+              <li class="footer-bottom-nav__item">
+                <a href="/sitemap/">サイトマップ</a>
+              </li>
+            </ul>
+            <div class="footer-bottom__copyright">
+              ©2022 ANDERSEN Co.,Ltd All Rights Reserved.
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
     <!-- end footer -->
     <!-- start script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
