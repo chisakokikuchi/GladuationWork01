@@ -172,10 +172,11 @@
 @media screen and (max-width: 811px) {
   .floating-box {
     opacity: 0.7;
-    top: 60%;
     font-size: 12px;
-    width: 50px;
-    height: 140px;
+    writing-mode: horizontal-tb;
+    width: 100%;
+    height: 50px;
+    top: 95%;
   }
 }
 
@@ -289,27 +290,27 @@
 }
 
 .loading > span:first-of-type {
-  animation: letterFade 5s ease-in-out infinite;
+  animation: letterFade 4s ease-in-out infinite;
   animation-delay: 0.1s;
 }
 
 .loading > span:nth-of-type(2) {
-  animation: letterFade 5s ease-in-out infinite;
+  animation: letterFade 4s ease-in-out infinite;
   animation-delay: 0.2s;
 }
 
 .loading > span:nth-of-type(3) {
-  animation: letterFade 5s ease-in-out infinite;
+  animation: letterFade 4s ease-in-out infinite;
   animation-delay: 0.3s;
 }
 
 .loading > span:nth-of-type(4) {
-  animation: letterFade 5s ease-in-out infinite;
+  animation: letterFade 4s ease-in-out infinite;
   animation-delay: 0.4s;
 }
 
 .loading > span:last-of-type {
-  animation: letterFade 5s ease-in-out infinite;
+  animation: letterFade 4s ease-in-out infinite;
   animation-delay: 0.5s;
 }
 .loaded {
@@ -336,7 +337,7 @@
 .wrapper {
   animation-name: fade-in;
   animation-duration: 2s;
-  animation-delay: 3s;
+  animation-delay: 2s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
   animation-fill-mode: both;

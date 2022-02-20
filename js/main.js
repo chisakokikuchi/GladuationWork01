@@ -25,18 +25,38 @@ $(function () {
 
 // タイトルのアニメーションCSS
 $(window).scroll(function () {
-  $(".fadeInDownTrigger").each(function () {
+  $(".fadeInUpTrigger").each(function () {
     //fadeInUpTriggerというクラス名が
     var elemPos = $(this).offset().top - 50; //要素より、50px上の
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
     if (scroll >= elemPos - windowHeight) {
       console.log("スクロールできたよ");
-      $(this).addClass("animate__animated animate__fadeInDown");
+      $(this).addClass("animate__animated animate__fadeInUp animate__slow");
       // 画面内に入ったらanimate__animatedとanimate__fadeInUpというクラス名を追記
     } else {
-      $(this).removeClass("animate__animated animate__fadeInDown");
+      $(this).removeClass("animate__animated animate__fadeInUp animate__slow");
       // 画面外に出たらanimate__animatedとanimate__fadeInUpというクラス名を外す
     }
   });
 });
+// ページ内ナビゲーション
+// $(function(){
+//   $(window).scroll(function(){
+// //hyggeからatHomeの間
+// if ($(window).scrollTop() > $('#hygge').offset().top && $(window).scrollTop() < $('#atHome').offset().top){
+// $("navlist_sec ul li").css("color", "#fff");
+// }//atHomeからcandleの間
+// if ($(window).scrollTop() > $('#atHome').offset().top && $(window).scrollTop() < $('#candle').offset().top){
+// $("navlist_sec ul li").css("color", "#fff");
+// }//candle から Foodの間
+// if ($(window).scrollTop() > $('#candle').offset().top && $(window).scrollTop() < $('#food').offset().top){
+// $("navlist_sec ul li").css("color", "#fff");
+// }//foodからoutDoorの間
+// if ($(window).scrollTop() > $('#food').offset().top && $(window).scrollTop() < $('#outDoor').offset().top){
+// $("navlist_sec ul li").css("color", "#fff");
+// }
+// }else//それ以外（つまりセクション１である場合）はこれ
+//   $("navlist_sec ul li").css("color", "#000");
+//    });
+// });
