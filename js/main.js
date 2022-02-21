@@ -40,23 +40,34 @@ $(window).scroll(function () {
     }
   });
 });
-// ページ内ナビゲーション
-// $(function(){
-//   $(window).scroll(function(){
-// //hyggeからatHomeの間
-// if ($(window).scrollTop() > $('#hygge').offset().top && $(window).scrollTop() < $('#atHome').offset().top){
-// $("navlist_sec ul li").css("color", "#fff");
-// }//atHomeからcandleの間
-// if ($(window).scrollTop() > $('#atHome').offset().top && $(window).scrollTop() < $('#candle').offset().top){
-// $("navlist_sec ul li").css("color", "#fff");
-// }//candle から Foodの間
-// if ($(window).scrollTop() > $('#candle').offset().top && $(window).scrollTop() < $('#food').offset().top){
-// $("navlist_sec ul li").css("color", "#fff");
-// }//foodからoutDoorの間
-// if ($(window).scrollTop() > $('#food').offset().top && $(window).scrollTop() < $('#outDoor').offset().top){
-// $("navlist_sec ul li").css("color", "#fff");
-// }
-// }else//それ以外（つまりセクション１である場合）はこれ
-//   $("navlist_sec ul li").css("color", "#000");
-//    });
-// });
+
+ページ内ナビゲーション;
+$(function () {
+  $(window).scroll(function () {
+    //hyggeからatHomeの間
+    if (
+      $(window).scrollTop() > $("#hygge").offset().top &&
+      $(window).scrollTop() < $("#atHome").offset().top
+    ) {
+      $("navlist_sec ul li").addClass("_on");
+    } //atHomeからcandleの間
+    if (
+      $(window).scrollTop() > $("#atHome").offset().top &&
+      $(window).scrollTop() < $("#candle").offset().top
+    ) {
+      $("navlist_sec ul li").addClass("_on");
+    } //candle から Foodの間
+    if (
+      $(window).scrollTop() > $("#candle").offset().top &&
+      $(window).scrollTop() < $("#food").offset().top
+    ) {
+      $("navlist_sec ul li").addClass("_on");
+    } //foodからoutDoorの間
+    if (
+      $(window).scrollTop() > $("#food").offset().top &&
+      $(window).scrollTop() < $("#outDoor").offset().top
+    ) {
+      $("navlist_sec ul li").addClass("_on");
+    }
+  });
+});

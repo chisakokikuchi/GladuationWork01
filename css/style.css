@@ -147,6 +147,27 @@
   font-size: 20px;
   font-family: "Cormorant SC", serif;
 }
+.navlist a {
+  opacity: 0.5;
+}
+/* リストの丸 疑似要素*/
+.navlist_sec a:after {
+  content: "";
+  background: #df884e;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: -18px;
+  top: calc(50% - 4px);
+  display: block;
+  border-radius: 50%;
+  opacity: 0;
+}
+.navlist_sec a._on:after {
+  opacity: 1;
+  color: #333333;
+}
+
 @media screen and (max-width: 811px) {
   .navlist_sec {
     display: none;
