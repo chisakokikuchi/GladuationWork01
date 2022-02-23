@@ -31,7 +31,7 @@ $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
     if (scroll >= elemPos - windowHeight) {
-      console.log("スクロールできたよ");
+      // console.log("スクロールできたよ");
       $(this).addClass("animate__animated animate__fadeInUp animate__slow");
       // 画面内に入ったらanimate__animatedとanimate__fadeInUpというクラス名を追記
     } else {
@@ -41,33 +41,75 @@ $(window).scroll(function () {
   });
 });
 
-ページ内ナビゲーション;
+// ページ内ナビゲーション;
+
 $(function () {
-  $(window).scroll(function () {
-    //hyggeからatHomeの間
-    if (
-      $(window).scrollTop() > $("#hygge").offset().top &&
-      $(window).scrollTop() < $("#atHome").offset().top
-    ) {
-      $("navlist_sec ul li").addClass("_on");
-    } //atHomeからcandleの間
-    if (
-      $(window).scrollTop() > $("#atHome").offset().top &&
-      $(window).scrollTop() < $("#candle").offset().top
-    ) {
-      $("navlist_sec ul li").addClass("_on");
-    } //candle から Foodの間
-    if (
-      $(window).scrollTop() > $("#candle").offset().top &&
-      $(window).scrollTop() < $("#food").offset().top
-    ) {
-      $("navlist_sec ul li").addClass("_on");
-    } //foodからoutDoorの間
-    if (
-      $(window).scrollTop() > $("#food").offset().top &&
-      $(window).scrollTop() < $("#outDoor").offset().top
-    ) {
-      $("navlist_sec ul li").addClass("_on");
+  $(window).on("load scroll resize", function () {
+    var st = $(window).scrollTop();
+    var wh = $(window).height();
+
+    $(".all_sub_follow_sec").each(function (i) {
+      var tg = $(this).offset().top;
+      var id = $(this).attr("id");
+
+      if (st > tg - wh + wh / 2) {
+        $(".list").removeClass("_on");
+        var link = $(".list[href *= " + id + "]");
+        $(link).addClass("_on");
+      }
+    });
+    if (st == 0) {
+      $(".list").eq(0).addClass("_on");
+      $(".list").eq(1).removeClass("_on");
     }
   });
 });
+
+// 以下参考サイトより作成しましたがうまくいかず採用なし
+// $(function () {
+//   $(window).scroll(function () {
+//     //hyggeからatHomeの間
+//     if (
+//       $(window).scrollTop() > $("#hygge").offset().top &&
+//       $(window).scrollTop() < $("#atHome").offset().top
+//     ) {
+//       console.log("オン");
+//       $(".navlist_sec ul li.hyggelist").addClass("_on");
+//     } //atHomeからcandleの間
+//     else if (
+//       $(window).scrollTop() > $("#atHome").offset().top &&
+//       $(window).scrollTop() < $("#candle").offset().top
+//     ) {
+//       $(".navlist_sec ul li.athomelist").addClass("_on");
+//     } //candle から Foodの間
+//     else if (
+//       $(window).scrollTop() > $("#candle").offset().top &&
+//       $(window).scrollTop() < $("#food").offset().top
+//     ) {
+//       $(".navlist_sec ul li.candlelist").addClass("_on");
+//     } //foodからoutDoorの間
+//     else if (
+//       $(window).scrollTop() > $("#food").offset().top &&
+//       $(window).scrollTop() < $("#outDoor").offset().top
+//     ) {
+//       $(".navlist_sec ul li.foodlist").addClass("_on");
+//     }
+//   });
+// });
+
+// TOPボタン
+$("#pageTop > a").on("click", function () {
+  console.log("クリックしたよ");
+  $("html").animate({
+    scrollTop: 0,
+  });
+});
+
+$(window).on("scroll"),
+  function () {
+    console.log("スクロールしたよ");
+    var dy = $(this).scrollTop();
+    if (dy > 200) {
+      $("#pageTop").addClass("page-top");
+    }
+  };
