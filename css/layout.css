@@ -335,7 +335,7 @@ img {
   background: #392d2b;
   z-index: 150;
 }
-.global-nav-overlay-list .contents {
+.global-nav-overlay .contents {
   width: calc(100% - 30px);
   display: flex;
   justify-content: space-between;
@@ -692,31 +692,33 @@ img {
   .athome1 {
     flex-direction: column;
   }
+  .athome2 {
+    padding-top: 12%;
+  }
   .athome1:nth-child(even) {
     flex-direction: column;
   }
   .athome3 {
     flex-direction: column;
+    padding-top: 10%;
   }
   .athome3:nth-child(even) {
     flex-direction: column;
   }
   .athome_text1 {
-    padding-top: 10%;
-    /* text-align: center; */
+    padding-top: 8%;
+    text-align: center;
   }
-  .athome_text2,
   .athome_text3 {
-    padding: 5%;
-    /* text-align: center; */
+    padding: 20%;
   }
+
   .athome_img1 {
     width: 100%;
     padding: 10%;
   }
   .athome_img2 {
     width: 100%;
-    margin: 0 auto;
   }
   .athome_img3 {
     width: 100%;
@@ -811,9 +813,13 @@ img {
   }
   .candle1 {
     flex-direction: column;
+    padding-top: 10%;
   }
   .candle1:nth-child(even) {
     flex-direction: column;
+  }
+  .candle2 {
+    padding-top: 10%;
   }
   .candle3 {
     flex-direction: column;
@@ -821,8 +827,14 @@ img {
   .candle3:nth-child(even) {
     flex-direction: column;
   }
+  .candle_text2 {
+    padding: 10% 0 15% 5%;
+  }
   .candle_img3 {
     width: 90%;
+  }
+  .candle_text4 {
+    padding: 15% 15% 0;
   }
   .candle_img4 {
     width: 70%;
@@ -891,6 +903,7 @@ img {
   }
   .food1 {
     flex-direction: column;
+    padding-top: 12%;
   }
   .food1:nth-child(even) {
     flex-direction: column;
@@ -962,7 +975,7 @@ img {
   width: 50%;
 }
 .outdoor_text5 {
-  padding-left: 8%;
+  padding: 8% 0 0 8%;
 }
 /* アウトドアSP */
 @media screen and (max-width: 811px) {
@@ -980,9 +993,13 @@ img {
   }
   .outdoor4 {
     flex-direction: column;
+    padding-top: 10%;
   }
   .outdoor4:nth-child(even) {
     flex-direction: column;
+  }
+  .outdoor_img1 {
+    padding-top: 10%;
   }
   .outdoor_img2 {
     width: 80%;
@@ -993,6 +1010,7 @@ img {
   }
   .outdoor_img6 {
     padding-left: 0;
+    padding-top: 5%;
   }
   .outdoor_img7 {
     width: 100%;

@@ -65,38 +65,6 @@ $(function () {
   });
 });
 
-// 以下参考サイトより作成しましたがうまくいかず採用なし
-// $(function () {
-//   $(window).scroll(function () {
-//     //hyggeからatHomeの間
-//     if (
-//       $(window).scrollTop() > $("#hygge").offset().top &&
-//       $(window).scrollTop() < $("#atHome").offset().top
-//     ) {
-//       console.log("オン");
-//       $(".navlist_sec ul li.hyggelist").addClass("_on");
-//     } //atHomeからcandleの間
-//     else if (
-//       $(window).scrollTop() > $("#atHome").offset().top &&
-//       $(window).scrollTop() < $("#candle").offset().top
-//     ) {
-//       $(".navlist_sec ul li.athomelist").addClass("_on");
-//     } //candle から Foodの間
-//     else if (
-//       $(window).scrollTop() > $("#candle").offset().top &&
-//       $(window).scrollTop() < $("#food").offset().top
-//     ) {
-//       $(".navlist_sec ul li.candlelist").addClass("_on");
-//     } //foodからoutDoorの間
-//     else if (
-//       $(window).scrollTop() > $("#food").offset().top &&
-//       $(window).scrollTop() < $("#outDoor").offset().top
-//     ) {
-//       $(".navlist_sec ul li.foodlist").addClass("_on");
-//     }
-//   });
-// });
-
 // TOPボタン
 $("#pageTop > a").on("click", function () {
   console.log("クリックしたよ");
@@ -113,3 +81,5 @@ $(window).on("scroll"),
       $("#pageTop").addClass("page-top");
     }
   };
+
+// ハンバーガーメニュー
