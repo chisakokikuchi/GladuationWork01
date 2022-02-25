@@ -151,7 +151,12 @@ img {
   width: 100%;
   height: 2px;
   background: #fff;
-  transition: all 0.3s;
+  /* transition: all 0.3s; */
+  /* トランジション追加してみた */
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-delay: 0;
+  transition-timing-function: ease-in-out;
 }
 /* ハンバガーメニュー　動きを追加する */
 .header-guide-list__item--nav span:nth-child(1) {
@@ -164,19 +169,19 @@ img {
 .header-guide-list__item--nav span:nth-child(3) {
   bottom: 0;
 }
-.header-guide-list__item--nav:not(.is-open):hover span:nth-of-type(1) {
+.header-guide-list__item--nav:not(.active):hover span:nth-of-type(1) {
   top: 2px;
 }
-.header-guide-list__item--nav:not(.is-open):hover span:nth-of-type(3) {
+.header-guide-list__item--nav:not(.active):hover span:nth-of-type(3) {
   bottom: 2px;
 }
-.header-guide-list__item--nav.is-open span:nth-child(1) {
+.header-guide-list__item--nav.active span:nth-child(1) {
   transform: translateY(9px) rotate(-45deg);
 }
-.header-guide-list__item--nav.is-open span:nth-child(2) {
+.header-guide-list__item--nav.active span:nth-child(2) {
   opacity: 0;
 }
-.header-guide-list__item--nav.is-open span:only-child(3) {
+.header-guide-list__item--nav.active span:nth-child(3) {
   transform: translateY(-9px) rotate(45deg);
 }
 /* ハンバーガーメニュー終わり */
@@ -323,7 +328,6 @@ img {
 
 /* グローバルナビoverlay 未対応 （363-422まで）*/
 .global-nav-overlay {
-  display: none;
   position: absolute;
   top: 60px;
   right: 0;
@@ -333,8 +337,22 @@ img {
   overflow: auto;
   color: #fff;
   background: #392d2b;
+  /* display: none; */
+  opacity: 0;
+  pointer-events: none;
+  /* トランジションの設定 */
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-delay: 0;
+  transition-timing-function: ease-in-out;
   z-index: 150;
 }
+.global-nav-overlay.active {
+  /* display: block; */
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .global-nav-overlay .contents {
   width: calc(100% - 30px);
   display: flex;
@@ -444,17 +462,17 @@ img {
     bottom: 16px;
   }
   /* 508から */
-  .header-guide-list__item--nav:not(.is-open):hover span:nth-of-type(1) {
+  .header-guide-list__item--nav:not(.active):hover span:nth-of-type(1) {
     top: 16px;
   }
-  .header-guide-list__item--nav:not(.is-open):hover span:nth-of-type(3) {
+  .header-guide-list__item--nav:not(.active):hover span:nth-of-type(3) {
     bottom: 16px;
   }
-  .header-guide-list__item--nav.is-open span:nth-child(1) {
+  .header-guide-list__item--nav.active span:nth-child(1) {
     transform: translate(-50%, 8px) rotate(-45deg);
   }
-  .header-guide-list__item--nav.is-open span:nth-child(3) {
-    transform: translate(-50%, 8px) rotate(45deg);
+  .header-guide-list__item--nav.active span:nth-child(3) {
+    transform: translate(-50%, -8px) rotate(45deg);
   }
   .header-guide-list__item--recruit {
     display: none;

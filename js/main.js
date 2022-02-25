@@ -83,3 +83,10 @@ $(window).on("scroll"),
   };
 
 // ハンバーガーメニュー
+$(function () {
+  $("#menuButton").on("click", function () {
+    console.log("ハンバガーメニュークリック");
+    $("#menuButton").toggleClass("active");
+    $("#nav").toggleClass("active");
+  });
+});
