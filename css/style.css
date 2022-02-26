@@ -183,7 +183,7 @@
   right: 0px;
   background-color: #392d2b;
   color: #ffffff;
-  writing-mode: vertical-rl;
+  writing-mode: vertical-rl;-
 }
 .rink-btn {
   display: block;
@@ -208,6 +208,14 @@
   line-height: 1.1;
   writing-mode: vertical-rl;
   width: 100%;
+  opacity: 0;
+}
+.page-top.fade-in {
+  transition-duration: 1s;
+  transition-property: all;
+  transition-delay: 0;
+  transition-timing-function: ease-in-out;
+  opacity: 1;
 }
 .page-top a {
   display: block;

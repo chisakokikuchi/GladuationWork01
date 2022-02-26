@@ -61,6 +61,9 @@ $(function () {
     if (st == 0) {
       $(".list").eq(0).addClass("_on");
       $(".list").eq(1).removeClass("_on");
+      $(".list").eq(2).removeClass("_on");
+      $(".list").eq(3).removeClass("_on");
+      $(".list").eq(4).removeClass("_on");
     }
   });
 });
@@ -73,14 +76,16 @@ $("#pageTop > a").on("click", function () {
   });
 });
 
-$(window).on("scroll"),
-  function () {
-    console.log("スクロールしたよ");
-    var dy = $(this).scrollTop();
-    if (dy > 200) {
-      $("#pageTop").addClass("page-top");
-    }
-  };
+$(window).on("scroll", function () {
+  // console.log("スクロールしたよ");
+  var dy = $(this).scrollTop();
+  if (dy > 200) {
+    console.log("200超えたよ");
+    $("#pageTop").addClass("fade-in");
+  } else {
+    $("#pageTop").removeClass("fade-in");
+  }
+});
 
 // ハンバーガーメニュー
 $(function () {

@@ -328,7 +328,7 @@ img {
 
 /* グローバルナビoverlay 未対応 （363-422まで）*/
 .global-nav-overlay {
-  position: absolute;
+  position: fixed;
   top: 60px;
   right: 0;
   bottom: 0;
@@ -938,6 +938,9 @@ img {
   }
   .food2 {
     padding-top: 70%;
+  }
+  .food_img3 {
+    display: none;
   }
   .food_img4 {
     width: 90%;
